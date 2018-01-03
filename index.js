@@ -7,18 +7,18 @@ registerScreens();
 Navigation.startTabBasedApp({
   tabs: [
     {
+      label: 'Calculator',
+      screen: 'PlatePal.PlateCalculatorScreen',
+      icon: require('./img/scale-icon.png'),
+      selectedIcon: require('./img/scale-icon.png'), // iOS only
+      title: 'Calculator'
+    },
+    {
       label: 'Gear',
       screen: 'PlatePal.EditAvailableGearScreen',
       icon: require('./img/plate-icon.png'),
       selectedIcon: require('./img/plate-icon.png'), // iOS only
       title: 'Edit Available Gear'
     },
-    {
-      label: 'Calculator',
-      screen: 'PlatePal.PlateCalculatorScreen',
-      icon: require('./img/scale-icon.png'),
-      selectedIcon: require('./img/scale-icon.png'), // iOS only
-      title: 'Calculator'
-    }
   ]
 });
